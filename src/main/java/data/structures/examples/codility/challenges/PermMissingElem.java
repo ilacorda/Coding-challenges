@@ -6,5 +6,4 @@ package data.structures.examples.codility.challenges;
  */
 public class PermMissingElem {
 
-    
 }
