@@ -11,7 +11,7 @@
 
 package data.structures.examples.hackerRank.challenges;
 
-import java.util .*;
+import java.util.*;
 
 public class HackerRankIfElseChallenge {
 
@@ -20,14 +20,14 @@ public class HackerRankIfElseChallenge {
     public static void main(String[] args) {
         int N = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-        if (N % 2 != 0) {
+        if (N % 2 == 1) {
             System.out.println("Weird");
         }
         if (N % 2 == 0 && isNumWithinRange(N, 2, 5)) {
             System.out.println("Not Weird");
         }
         if (N % 2 == 0 && isNumWithinRange(N, 6, 20)) {
-            System.out.println("Not Weird");
+            System.out.println("Weird");
         }
         if ((N % 2 == 0) && (N > 20)) {
             System.out.println("Not Weird");
