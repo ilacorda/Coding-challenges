@@ -7,19 +7,20 @@ package data.structures.examples.codility.challenges;
 
 public class BinaryGap {
 	public int solution(int N) {
-		// conver the integer into a binary representation
+		// convert the integer into a binary representation
 		int binaryGap = 0;
-		String binRep = Integer.toBinaryString(N);
+		var binRep = Integer.toBinaryString(N);
 		// Convert the string with the binary representation to an array of characters
 		char[] stringToCharacters = binRep.toCharArray();
 		int j = 0;
 		// Loop through each character in the binary representation
 		// and increase at each 0 encountered
-		for (Character chr : stringToCharacters) {
-			if (chr.equals('0')) {
+		for (int i = 0, stringToCharactersLength = stringToCharacters.length; i < stringToCharactersLength; i++) {
+			Character chr = stringToCharacters[i];
+			if (chr == '0') {
 				j++;
 			}
-			if (chr.equals('1')) {
+			if (chr == '1') {
 				if (j > binaryGap) {
 					binaryGap = j;
 				}

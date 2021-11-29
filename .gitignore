@@ -1,1 +1,3 @@
 /target/
+!/coding-challenges.iml
+!/.idea/
